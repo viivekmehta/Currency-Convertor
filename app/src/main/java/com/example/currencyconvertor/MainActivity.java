@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 result.setText("$ " + (fromValue.multiply(multiplyBy)).toString());
             }
         } else {
-            Toast.makeText(getBaseContext(),"Please enter the amount to convert !!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(),"Please enter the amount to convert!!",Toast.LENGTH_SHORT).show();
         }
     }
 
