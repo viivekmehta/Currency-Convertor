@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             Spinner toCurrency = (Spinner) findViewById(R.id.spinnerTo);
             TextView result = (TextView) findViewById(R.id.result);
             if ((fromCurrency.getSelectedItem().toString()).equalsIgnoreCase(toCurrency.getSelectedItem().toString())) {
-                Toast.makeText(getBaseContext(), "\"From\" and \"To\" values cannot be same !!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getBaseContext(), "\"From\" and \"To\" values cannot be same!!", Toast.LENGTH_SHORT).show();
             } else if ((fromCurrency.getSelectedItem().toString()).equalsIgnoreCase("Dollars")) {
                 multiplyBy = new BigDecimal("71.43");
                 result.setText("Rs. " + (fromValue.multiply(multiplyBy)).toString());
